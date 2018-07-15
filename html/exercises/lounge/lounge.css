@@ -10,6 +10,22 @@ p {
     color: maroon;
 }
 
-h1, h2, p {
+p.greentea {
+    color: green;
+}
+
+p.bluetea {
+    color: deepskyblue;
+}
+
+p.purpletea {
+    color: mediumpurple;
+}
+
+body {
     font-family: sans-serif;
+}
+
+em {
+    font-family: serif;
 }
