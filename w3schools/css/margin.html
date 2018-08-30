@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Border</title>
+    <style type="text/css" rel="stylesheet">
+        p {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 80px;
+            border-style: solid;
+        }
+
+        /*Margin shorthand*/
+        p#shorthand {
+           margin: 25px 50px 75px 100px; /*top right bottom left*/
+        }
+
+        p#shorthand2 {
+            margin: 25px 50px 100px; /*top sides bottom*/
+        }
+
+        p#shorthand3 {
+            margin: 25px 100px; /*top-bottom sides*/
+        }
+
+        p#shorthand4 {
+            margin: 25px; /* all sides are 25px*/
+        }
+
+        div#auto {
+            width: 300px;
+            margin: auto;
+            border: 1px solid red;
+            padding: 20px;
+        }
+
+       div#inherit {
+           border: 1px solid red;
+           margin-left: 100px;
+       }
+
+        p#ex1 {
+            margin-left: inherit; /*This will inherit the margin-left from the parent*/
+        }
+
+        /*When the two top and bottom margin collapse it will use which are the highest value*/
+        p#collapse1 {
+            margin: 0 0 50px 0;
+        }
+
+        p#collapse2 {
+            margin: 20px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Margin - individual sides -->
+    <p>This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px</p>
+    <p id="shorthand">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px</p>
+    <p id="shorthand2">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px</p>
+    <p id="shorthand3">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px</p>
+    <p id="shorthand4">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px</p>
+    <div id="auto">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px</div>
+    <div id="inherit">
+        <p id="ex1">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px</p>
+    </div>
+
+    <!-- Collapse Margin -->
+    <p id="collapse1">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px</p>
+    <p id="collapse2">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px</p>
+</body>
+</html>
