@@ -1,0 +1,30 @@
+body {
+    background-color: #e6eede;
+    font-size: medium;
+    margin: 0 auto;
+    max-width: 600px;
+    font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    border-bottom: 2px solid #5e5e5e;
+}
+
+section.main p {
+    line-height: 1.5;
+    border-left: 5px solid skyblue;
+    padding-left: 20px;
+    width: 350px;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 2px solid black;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    margin-left: 370px;
+}
