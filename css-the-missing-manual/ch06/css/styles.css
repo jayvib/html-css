@@ -64,7 +64,17 @@ table {
 html {
     font-family: PTSans, Arial, sans-serif;
     font-size: 62.5%; /* this is equivalent to 10pixels*/
+    background: rgb(225,238,253) url('../images/bg_body.png') repeat-x;
 }
+
+.main {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 0 10px;
+    border: 4px solid white;
+    background: transparent url('../images/bg_banner.jpg') no-repeat;
+}
+
 
 .main h1 {
     color: rgb(249, 212, 120);
@@ -114,4 +124,22 @@ html {
     color: rgb(32, 126, 191);
     font-size: 1.5em;
     margin-bottom: 7px;
+}
+
+.main .byline strong {
+    color: rgb(32,126,191);
+    text-transform: uppercase;
+    margin-left: 11px;
+}
+
+.main .byline {
+    font-size: 1.6em;
+    margin: 5px 0 25px 50px
+}
+
+.main h1 strong {
+    font-size: 150px;
+    color: white;
+    line-height: 1;
+    margin-right: -.5em;
 }
