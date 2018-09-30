@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Border</title>
+</head>
+<style>
+  p {
+    border: 5px green;
+  }
+
+  p#dotted {
+    border-style: dotted;
+    border-color: red;
+  }
+
+  p#dashed {
+    border-style: dashed;
+  }
+
+  p#solid {
+    border-style: solid;
+    border-width: 2px 4px 6px 8px;
+    border-color: lightgray;
+  }
+
+  p#double {
+    border-style: double;
+  }
+
+  p#groove {
+    border-style: groove;
+    border-width: 10px;
+  }
+
+  p#ridge {
+    border-style: ridge;
+    border-width: 10px;
+  }
+
+  p#inset {
+    border-style: inset;
+    border-width: 10px;
+  }
+
+  p#outset {
+    border-style: outset;
+    border-width: 10px;
+  }
+
+  p#none {
+    border-style: none;
+  }
+
+  p#hidden {
+    border-style: hidden;
+  }
+
+  p#mixed {
+    border-style: dotted dashed solid double;
+    border-width: 10px;
+  }
+
+  p#individual {
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+  }
+
+  p#individual2 {
+    border-top: dotted green;
+    border-right: solid red;
+    border-bottom: dotted green;
+    border-left: solid red;
+  }
+
+  p#pair {
+    border-style: dotted solid double;
+  }
+
+  p#pair2 {
+    border-style: dotted double;
+    background-color: lightgray;
+  }
+
+  p#round {
+    border: 5px solid red;
+    border-radius: 10px;
+  }
+</style>
+<body>
+  <p id="dotted">A dotted border</p>
+  <p id="dashed">A dashed border</p>
+  <p id="solid">A solid border</p>
+  <p id="double">A double border.</p>
+  <p id="groove">A groove border.</p>
+  <p id="ridge">A ridge border.</p>
+  <p id="inset">An inset border.</p>
+  <p id="outset">An outset border.</p>
+  <p id="none">No border</p>
+  <p id="hidden">Hidden border</p>
+  <p id="mixed">Mixed border</p>
+  <p id="individual">Different Border Styles</p>
+  <p id="individual2">Different border</p>
+  <p id="pair">Paired border</p>
+  <p id="pair2">Paired border</p>
+  <p id="round">Rounded border</p>
+</body>
+</html>
