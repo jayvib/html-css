@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Margin</title>
+  <style>
+    div {
+      /*Using individual*/
+      border: 1px solid black;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-right: 150px;
+      margin-left: 80px;
+      background-color: lightblue;
+    }
+
+    /*Using margin shorthand properties*/
+    div#shorthand {
+      border: 1px solid black;
+      margin: 25px 50px 75px 100px; /*top right bottom left*/
+      background-color: lightblue;
+      padding: 10px;
+    }
+
+    div#shorthand2 {
+      border: 1px solid black;
+      margin: 25px 50px;
+      background-color: lightblue;
+      padding: 10px;
+    }
+
+    div#shorthand3{
+      border: 1px solid black;
+      margin: 25px;
+      background-color: lightblue;
+      padding: 10px;
+    }
+
+    div#auto {
+      width: 300px;
+      margin: auto; /*The element will then take up the specified width, and the remaining space wil be split equally between the left and right margins.*/
+      border: 1px solid red;
+    }
+
+    div#inherit {
+      border: 1px solid red;
+      margin-left: 100px;
+    }
+
+    div#inherit p#ex1 {
+      margin-left: inherit;
+    }
+
+    h2#heading1 {
+      margin: 0 0 50px 0;
+    }
+
+    h2#heading2 {
+      margin: 20px 0 0 0;
+    }
+  </style>
+</head>
+<body>
+  <h2>Using individual margin properties</h2>
+
+  <div>This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left
+  margin of 80px.</div>
+
+  <h2>Using shorthand margin properties</h2>
+
+  <div id="shorthand">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left
+    margin of 80px.</div>
+
+  <h2>Using shorthand margin properties 2</h2>
+  <div id="shorthand2">This div element has a top and bottom margin of 25px, right and left margin of 20px</div>
+
+  <h2>Using the short margin properties all</h2>
+  <div id="shorthand3">This div element has 25px margin in all sides</div>
+
+  <h2>Using auto margin properties</h2>
+  <div id="auto">This div element has auto margin</div>
+
+  <h2>Using inherit margin properties</h2>
+  <div id="inherit">This div has a margin left of 100px.
+  <p id="ex1">This paragraph will inherit margin from its parent.</p></div>
+
+  <h2 id="heading1">Heading 1</h2>
+  <h2 id="heading2">Heading 2</h2>
+
+</body>
+</html>
