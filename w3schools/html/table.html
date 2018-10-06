@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Table</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 15px;
+    }
+
+    th {
+      text-align: left;
+    }
+
+    table {
+      border-spacing: 1px;
+    }
+
+    table#t01 {
+      width: 100%;
+      background-color: #f1f1c1;
+    }
+
+    table#t01 tr:nth-child(even) {
+      background-color: #eee;
+    }
+
+    table#t01 tr:nth-child(odd) {
+      background-color: #FFCC66;
+    }
+
+    table#t01 th {
+      color: white;
+      background-color: black;
+    }
+
+    table#t02 th{
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <table style="width:100%;">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Jayson</td>
+      <td>Vibandor</td>
+      <td>27</td>
+    </tr>
+  </table>
+
+  <!--Column Spanning-->
+  <table style="width:100%;">
+    <tr>
+      <th>Name</th>
+      <th colspan="2">Telephone</th>
+    </tr>
+    <tr>
+      <td>Bill Gates</td>
+      <td>2342342</td>
+      <td>234234234</td>
+    </tr>
+  </table>
+
+  <table style="width:100%;">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Job</th>
+    </tr>
+    <tr>
+      <td>Jayson</td>
+      <td colspan="2">Vibandor</td>
+    </tr>
+  </table>
+
+  <!--Row span-->
+  <table style="width:100%">
+    <caption>This is amazing table</caption>
+    <tr>
+      <th>Name:</th>
+      <td>Jayson Vibandor</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Telephone:</th>
+      <td>2342342342</td>
+    </tr>
+    <tr>
+      <td>13241341341</td>
+    </tr>
+  </table>
+
+  <!--Special Style Table-->
+  <table id="t01">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>Jayson</td>
+      <td>Vibandor</td>
+      <td>27</td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Job</th>
+    </tr>
+
+    <tr>
+      <td>Jayson Vibandor</td>
+      <td>Developer</td>
+    </tr>
+
+    <tr id="t02">
+      <td>Bill Gates</td>
+      <td>Businessman</td>
+    </tr>
+
+  </table>
+</body>
+</html>
