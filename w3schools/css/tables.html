@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Table</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th {
+      height: 50px;
+      text-align: left;
+    }
+
+    td {
+      vertical-align: top;
+      height: 50px;
+    }
+
+    table#t2 tr th, table#t2 tr td {
+      padding: 15px;
+      text-align: left;
+    }
+
+    table#t3 {
+      border: 0;
+    }
+
+    table#t3 th, table#t3 td {
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h2>Add a border to a table:</h2>
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+    </tr>
+    <tr>
+      <td>Jayson</td>
+      <td>Vibandor</td>
+    </tr>
+    <tr>
+      <td>Althea</td>
+      <td>Bongalon</td>
+    </tr>
+  </table>
+  <br>
+  <table id="t2">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+    </tr>
+    <tr>
+      <td>Jayson</td>
+      <td>Vibandor</td>
+    </tr>
+    <tr>
+      <td>Althea</td>
+      <td>Bongalon</td>
+    </tr>
+    <tr>
+      <td>Foo</td>
+      <td>Bar</td>
+    </tr>
+  </table>
+  <br>
+  <table id="t3">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+    </tr>
+    <tr>
+      <td>Jayson</td>
+      <td>Vibandor</td>
+    </tr>
+    <tr>
+      <td>Althea</td>
+      <td>Bongalon</td>
+    </tr>
+    <tr>
+      <td>Foo</td>
+      <td>Bar</td>
+    </tr>
+  </table>
+</body>
+</html>
